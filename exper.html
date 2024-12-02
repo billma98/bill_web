@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website of Bill (Haoran) Ma">
+    <title>[Your Name] - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-background">
+        <div class="header-text">
+            <h1>Bill Ma's Experience</h1>
+        </div>
+    </header>
+    
+    <!-- Dropdown Navigation Menu -->
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="prj.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Experience -->
+    <section id="shift">
+        <h2><strong>System Control Engineer</strong></h2>
+        <h3>@ <a href="https://shiftrobotics.io" target="_blank">Shift Robotics</a></h3>
+        <p> July 2023 - Present
+            <ul>
+                <li>Led the development of ShiftOS versions 1.0 to 3.0, which are publicly released manufacturing code for control algorithms. Improved gait state estimation by 70% through filtered IMU data and the integration of a Kalman Filter. Enhanced the accuracy of swing and stance phase detection to 90% using IMU and motor sensor fusion. Conducted research to inform the design of controllers based on user gait kinematics and dynamics, boosting responsiveness and pick-up time by 65% while reducing stopping time by 30%.</li>
+                <li>Introduced a Fuzzy Logic Controller and redesigned the control system structure to enable user-customizable acceleration and personalized features.</li>
+                <li>Integrated control algorithms into RTOS and Cortex-based systems using C, handling Bluetooth communication and FLASH operations in real time. Focused on standard software structure encapsulation and modularization in C. Validated simulations through data replay and analysis using Python.</li>
+                <li>Conducted motor and battery testing with the electrical engineering team to support next-gen hardware development and integration. Collaborated with mobile developers on customizable user profiles and real-time training apps. Established a Discord community and beta user program for feedback to enhance the controller.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="research">
+        <h2><strong>Research Assistant</strong></h2>
+        <h3>@ <a href="https://www.ri.cmu.edu/robotics-groups/legged-systems-group/" target="_blank">Legged Systems Group in Carnegie Mellon University</a></h3>
+        <p> Sep 2021 - Jun 2023
+            <ul>
+                <li>
+                    <strong>Open Source Leg (OSL):</strong> Developed a control system for a robotic lower limb prosthesis using Python and object-oriented programming. Introduced min-jerk and neuromuscular theory for human gait control. Performed motor control with PID tuning. Integrated and processed sensor data (encoders, load cell, and IMU) in real-time using microcontrollers (Raspberry Pi and NVIDIA Jetson Nano).
+                </li>
+                <li>
+                    <strong>Ground feature recognition:</strong> Innovated computer vision algorithms to detect ground features, project relative depth information into 3D space, and determine safe foot landing areas to boost behavior controller. Applied OpenCV and deep learning algorithms (Yolov5). Integrated RealSense D455 & 435 cameras on prosthesis through ROS in Linux.
+                </li>
+                <li>
+                    <strong>SLAM for prosthesis:</strong> Adapted SLAM algorithms (MSCKF and ORB) to prosthesis for environment information.
+                </li>
+            </ul>
+            
+        </p>
+    </section>
+    
+
+</body>
+</html>

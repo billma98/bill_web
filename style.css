@@ -139,3 +139,80 @@ img {
     display: block;
 }
 
+
+
+.blog-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.blog-list li {
+    margin-bottom: 20px; /* Add space between blog posts */
+}
+
+.blog-list a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.blog-list a:hover {
+    background: #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list h3 {
+    margin: 0;
+}
+
+.blog-list p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-auto-flow: row; /* Forces items into a single row */
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures items resize dynamically */
+    gap: 20px; /* Space between the items */
+    padding: 10px;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+
+.blog-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blog-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.blog-item h3 {
+    margin: 0;
+}
+
+.blog-item p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.blog-item a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+

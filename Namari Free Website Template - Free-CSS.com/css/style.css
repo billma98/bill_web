@@ -280,6 +280,9 @@ section {
 
 .col-2-3 {
     width: 66.66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .col-3-4 {

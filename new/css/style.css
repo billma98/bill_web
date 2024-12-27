@@ -835,6 +835,10 @@ h6 {
     margin-top: 0;
 }
 
+.icon-block-description ul {
+    padding-left: 10%; /* Adjust this value as needed */
+}
+
 /* Icon Left*/
 
 .icon-left .icon {
@@ -2330,6 +2334,51 @@ blockquote {
 
 }
 
+.carousel-container {
+    position: relative;
+    width: 90%; /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Allows content to extend horizontally */
+}
+
+.carousel-item {
+    min-width: 70%; /* Adjust item width */
+    margin: 10px;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
 
 
 

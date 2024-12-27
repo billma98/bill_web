@@ -31,7 +31,7 @@ function updateCarouselPosition(carousel, items) {
     carousel.style.transform = `translateX(${-itemWidth * currentIndex}px)`;
 }
 
-let autoRoll = setInterval(scrollRightAuto, 2500);
+let autoRoll = setInterval(scrollRightAuto, 3000);
 
 function scrollRightAuto() {
     const carousel = document.querySelector('.carousel');

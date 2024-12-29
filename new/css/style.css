@@ -1004,7 +1004,7 @@ blockquote {
 
 .gallery-item img {
     max-width: 100%;
-    height: auto;
+    object-fit: cover; /* Ensures the image is scaled and cropped appropriately */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -1045,7 +1045,7 @@ blockquote {
 
 /* Modal Styling */
 .custom-modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -1061,16 +1061,22 @@ blockquote {
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 70%;
     text-align: center;
     position: relative;
+    display: flex; /* Use flexbox for layout */
 }
 
 .modal-content img {
-    max-width: 100%;
+    max-width: 75%;
+    max-height: 475px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    position: relative;
+    margin-left: 0; /* Remove any default centering */
+    margin-right: 50px; /* Remove any default centering */
+    float: left; /* Aligns the image to the left */
 }
 
 .modal-content .close {
@@ -1086,6 +1092,80 @@ blockquote {
 .modal-content .close:hover,
 .modal-content .close:focus {
     color: black;
+}
+
+.scrollable-links {
+    width: 75%;
+    overflow-y: auto;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.scrollable-links .blog-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically within the row */
+    gap: 15px; /* Add some spacing between the image and the text */
+}
+
+.scrollable-links .blog-item img {
+    border-radius: 5px;
+    max-width: 30%; /* Ensures the image scales within the item */
+    height: auto; /* Maintains aspect ratio */
+    float: left; /* Aligns the image to the left */
+}
+
+
+.scrollable-links .blog-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.scrollable-links .blog-item ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.scrollable-links .blog-item ul li {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+}
+
+.scrollable-links .blog-item ul li a {
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+.description-area {
+    width: 25%;
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-area h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #222;
+}
+
+.description-area p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
 }
 
 

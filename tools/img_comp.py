@@ -30,7 +30,7 @@ def compress_images(input_folder):
                     img.save(output_path, optimize=True, quality=50)  # JPEG: Quality set to 30
                 elif filename.endswith(".png"):
                     img = img.convert("P", palette=Image.ADAPTIVE)  # PNG: Convert to palette-based (smaller size)
-                    img.save(output_path, optimize=True)
+                    img.save(output_path, optimize=True, compress_level=9)
                 
                 print(f"Compressed: {filename}")
             except Exception as e:

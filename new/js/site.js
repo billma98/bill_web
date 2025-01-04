@@ -51,7 +51,7 @@ $(document).ready(function () {
 /* Preloader and animations */
 /* Preloader and animations */
 $(document).ready(function () {
-    const prioritizedImage = "../images/banner-images/bill_with_mv_slc.jpg"; // Path to the image you want to load first
+    const prioritizedImage = "new/images/banner-images/bill_with_mv_slc.jpg"; // Path to the image you want to load first
     const img = new Image(); // Create a new image object
 
     img.onload = function () {

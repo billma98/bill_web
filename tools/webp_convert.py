@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Define the source folder where images are located
-image_folder = "../new/images/"
+image_folder = "../new/images/projects/shift/dirty"
 
 def convert_images_to_webp(folder):
     for root, _, files in os.walk(folder):  # Walk through all subdirectories

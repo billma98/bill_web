@@ -1121,6 +1121,13 @@ blockquote {
     float: left; /* Aligns the image to the left */
 }
 
+.scrollable-links .blog-item iframe {
+    border-radius: 5px;
+    max-width: 30%; /* Ensures the image scales within the item */
+    height: auto; /* Maintains aspect ratio */
+    float: left; /* Aligns the image to the left */
+}
+
 
 .scrollable-links .blog-item h3 {
     margin: 0 0 10px;
@@ -2498,6 +2505,7 @@ blockquote {
     justify-content: center;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Center vertically */
 }
 
 .carousel-item img {
@@ -2507,6 +2515,13 @@ blockquote {
     display: block; /* Remove any inline spacing issues */
     justify-content: center;
     border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.carousel-item iframe {
+    width: 100%; /* Adjust size as needed */
+    height: 80%; /* Ensures full height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .carousel-caption {
